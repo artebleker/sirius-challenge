@@ -6,11 +6,10 @@ import TableContainer from "./components/table/TableContainer";
 import Login from "./components/login/Login";
 import PageNotFound from "./components/pageNotFound/PageNotFound";
 function App() {
-
   return (
     <BrowserRouter>
-      <div >
-          <Header /> 
+      <div>
+        <Header />
         <Routes>
           <Route exact path="/" element={<Login />} />
           <Route exact path="/sirius-challenge" element={<Login />} />

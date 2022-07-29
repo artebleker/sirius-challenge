@@ -6,18 +6,18 @@ const PageNotFound = () => {
 
   return (
     <div className="error-container">
-        <div className="error-form">
-      <h1 className="title "> 404</h1>
-      <h2 className="title"> Page Not Found</h2>
-      <img
-        className="error-img"
-        src={`https://rickandmortyapi.com/api/character/avatar/${randomA}.jpeg`}
-        alt="404"
-      />
-      <Link to={"/"} className="btn-modal-close text error-text">
-        Go back!
-      </Link>
-    </div>
+      <div className="error-form">
+        <h1 className="title "> 404</h1>
+        <h2 className="title"> Page Not Found</h2>
+        <img
+          className="error-img"
+          src={`https://rickandmortyapi.com/api/character/avatar/${randomA}.jpeg`}
+          alt="404"
+        />
+        <Link to={"/"} className="btn-modal-close text error-text">
+          Go back!
+        </Link>
+      </div>
     </div>
   );
 };

@@ -2,9 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 const EpisodesModal = ({ modalEpisode, setModalEpisode, character }) => {
-  
-  
-    const [episodes, setEpisodes] = useState([]);
+  const [episodes, setEpisodes] = useState([]);
   useEffect(() => {
     const endPointsEpisodes = [];
     for (let i = 0; i <= 3; i++) {
@@ -18,12 +16,11 @@ const EpisodesModal = ({ modalEpisode, setModalEpisode, character }) => {
       .then((data) => {
         let firstResult = data.map((result) => result.data.results);
         let finalResult = firstResult.flatMap((result) => result);
-          setEpisodes(finalResult);
+        setEpisodes(finalResult);
       })
       .catch((err) => console.error(err));
   }, []);
 
-console.log(episodes)
   return (
     <>
       {modalEpisode && (
@@ -36,11 +33,21 @@ console.log(episodes)
               </label>
               <label className="title ">
                 Code
-                <p className="text modal-text">{episodes.filter((f) => f.url === character.episode[0])[0].episode}</p>
+                <p className="text modal-text">
+                  {
+                    episodes.filter((f) => f.url === character.episode[0])[0]
+                      .episode
+                  }
+                </p>
               </label>
               <label className="title ">
                 Air Date
-                <p className="text modal-text">{episodes.filter((f) => f.url === character.episode[0])[0].air_date}</p>
+                <p className="text modal-text">
+                  {
+                    episodes.filter((f) => f.url === character.episode[0])[0]
+                      .air_date
+                  }
+                </p>
               </label>
               <label className="title ">
                 Episodes List
@@ -52,7 +59,10 @@ console.log(episodes)
                   {character.episode.map((episode, index) => (
                     <li key={index}>
                       <a href={episode} target="_blank" rel="noreferrer">
-                        <p className="text modal-link"> {episodes.filter((f) => f.url === episode)[0].name}</p>
+                        <p className="text modal-link">
+                          {" "}
+                          {episodes.filter((f) => f.url === episode)[0].name}
+                        </p>
                       </a>
                     </li>
                   ))}

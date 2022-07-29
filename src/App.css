@@ -2,10 +2,10 @@
   padding: 0px;
   margin: 0px;
 }
-body{
+body {
   background: #0a222d;
 }
-ol{
+ol {
   list-style-type: none;
 }
 a {
@@ -31,7 +31,7 @@ a:link {
   line-height: 20px;
   color: #ffffff;
 }
-.text-alert{
+.text-alert {
   color: red;
   font-size: 14px;
   margin-top: 5px;

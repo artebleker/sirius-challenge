@@ -61,8 +61,12 @@ const Login = () => {
             </button>
           </form>
           <div className="text-password text">
-          <p>Username: <b>username@sirius.com</b></p>
-          <p>Password: <b>react</b></p>
+            <p>
+              Username: <b>username@sirius.com</b>
+            </p>
+            <p>
+              Password: <b>react</b>
+            </p>
           </div>
         </div>
       )}

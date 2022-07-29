@@ -1,6 +1,6 @@
 import React from "react";
 import "./search.css";
-const Search = ({ q, setQ }) => {
+const Search = ({ q, setQ, setCurrentPage }) => {
   return (
     <div className="search-container">
       <form>
@@ -24,7 +24,10 @@ const Search = ({ q, setQ }) => {
           name="keyword"
           id="keyword"
           value={q}
-          onChange={(e) => setQ(e.target.value)}
+          onChange={(e) => {
+            setQ(e.target.value);
+            setCurrentPage(1);
+          }}
         ></input>
       </form>
     </div>

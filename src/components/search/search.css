@@ -10,15 +10,13 @@
   width: 447px;
   margin-left: 20px;
   border: none;
-  border-bottom: 1px solid #00DFDD;
+  border-bottom: 1px solid #00dfdd;
 }
 
-
-
-@media screen and (max-width:739px){
-  .search-area {  
-  font-size: 22px;
-  width: max-content;
-  border-bottom: 1px solid #00DFDD;
+@media screen and (max-width: 739px) {
+  .search-area {
+    font-size: 22px;
+    width: max-content;
+    border-bottom: 1px solid #00dfdd;
   }
 }
