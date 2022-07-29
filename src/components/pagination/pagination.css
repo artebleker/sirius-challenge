@@ -1,0 +1,25 @@
+.pagination-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin: 0px 30px 20px;
+}
+
+.pagination-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.current-page {
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #00dfdd;
+  border-radius: 45px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}

@@ -1,0 +1,24 @@
+.search-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.search-area {
+  background: none;
+  font-size: 28px;
+  width: 447px;
+  margin-left: 20px;
+  border: none;
+  border-bottom: 1px solid #00DFDD;
+}
+
+
+
+@media screen and (max-width:739px){
+  .search-area {  
+  font-size: 22px;
+  width: max-content;
+  border-bottom: 1px solid #00DFDD;
+  }
+}
