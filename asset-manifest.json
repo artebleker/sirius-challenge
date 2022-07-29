@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/sirius-challenge/static/css/main.a08f6e09.css",
+    "main.js": "/sirius-challenge/static/js/main.5bcfce68.js",
+    "static/media/sirius.png": "/sirius-challenge/static/media/sirius.e1d9b1ebfa9e75b98a97.png",
+    "index.html": "/sirius-challenge/index.html",
+    "main.a08f6e09.css.map": "/sirius-challenge/static/css/main.a08f6e09.css.map",
+    "main.5bcfce68.js.map": "/sirius-challenge/static/js/main.5bcfce68.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a08f6e09.css",
+    "static/js/main.5bcfce68.js"
+  ]
+}
