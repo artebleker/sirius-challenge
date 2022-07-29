@@ -13,6 +13,7 @@ function App() {
           <Header /> 
         <Routes>
           <Route exact path="/" element={<Login />} />
+          <Route exact path="/sirius-challenge" element={<Login />} />
           <Route path="/characters" element={<TableContainer />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
