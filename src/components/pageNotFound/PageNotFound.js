@@ -15,7 +15,7 @@ const PageNotFound = () => {
           alt="404"
         />
         <Link
-          to={"/" || "/sirius-challenge"}
+          to={"/sirius-challenge"} // "/"
           className="btn-modal-close text error-text"
         >
           Go back!
