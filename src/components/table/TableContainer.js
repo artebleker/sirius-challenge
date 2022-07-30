@@ -66,7 +66,7 @@ const TableContainer = () => {
             <button
               onClick={() => {
                 sessionStorage.clear();
-                window.location.href = "/";
+                window.location.href = "/" || "/sirius-challenge";
               }}
               className="text btn-logout "
             >

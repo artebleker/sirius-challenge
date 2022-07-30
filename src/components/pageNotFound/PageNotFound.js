@@ -14,7 +14,10 @@ const PageNotFound = () => {
           src={`https://rickandmortyapi.com/api/character/avatar/${randomA}.jpeg`}
           alt="404"
         />
-        <Link to={"/"} className="btn-modal-close text error-text">
+        <Link
+          to={"/" || "/sirius-challenge"}
+          className="btn-modal-close text error-text"
+        >
           Go back!
         </Link>
       </div>
