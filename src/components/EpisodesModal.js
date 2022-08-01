@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 const EpisodesModal = ({ modalEpisode, setModalEpisode, character }) => {
+  
   const [episodes, setEpisodes] = useState([]);
   useEffect(() => {
     const endPointsEpisodes = [];

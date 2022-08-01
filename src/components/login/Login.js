@@ -2,7 +2,9 @@ import React from "react";
 import { useNavigate, Navigate } from "react-router-dom";
 import "./login.css";
 const Login = () => {
+
   const history = useNavigate();
+  
   const submitHandler = (e) => {
     e.preventDefault();
 
@@ -32,6 +34,7 @@ const Login = () => {
 
     history("/characters");
   };
+
   let token = sessionStorage.getItem("token");
 
   return (

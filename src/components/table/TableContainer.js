@@ -10,16 +10,21 @@ import EpisodesModal from "../EpisodesModal";
 const TableContainer = () => {
   let token = sessionStorage.getItem("token");
 
+  // Modal useState
   const [modalState, setModalState] = useState(false);
   const [modalEpisode, setModalEpisode] = useState(false);
   const [modalCharacter, setModalCharacter] = useState([]);
 
+  // Page number useState
   const [currentPage, setCurrentPage] = useState(1);
 
+  // Characters useState
   const [characters, setCharacters] = useState([]);
 
+  // Sort by Species useState
   const [sortSpecies, setSortSpecies] = useState(false);
 
+  // Search query useState
   const [q, setQ] = useState("");
   const [searchParam] = useState(["name"]);
 
@@ -46,6 +51,7 @@ const TableContainer = () => {
       .catch((err) => console.error(err));
   }, []);
 
+  // Search query functions
   function search(items) {
     return items.filter((item) => {
       return searchParam.some((newItem) => {

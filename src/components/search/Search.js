@@ -19,7 +19,7 @@ const Search = ({ q, setQ, setCurrentPage }) => {
         </svg>
         <input
           type="search"
-          placeholder="Search User"
+          placeholder="Search character"
           className="title search-area"
           name="keyword"
           id="keyword"
